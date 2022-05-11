@@ -232,7 +232,7 @@ body {
   padding: 10px 10px 10px 40px;
 
   position: absolute;
-  width: 217px;
+  width: 300px;
   height: 60px;
   left: -22px;
   top: 130px;
@@ -242,7 +242,7 @@ body {
   /* Rectangle 1 */
   position: static;
   width: 4px;
-  height: 40px;
+  height: 50px;
   left: 40px;
   top: 10px;
 
@@ -259,7 +259,7 @@ body {
 .inside-subheader {
   /* meet the talented team behind all this */
   position: static;
-  width: 153px;
+  width: 230px;
   height: 40px;
   left: 54px;
   top: 10px;
@@ -274,7 +274,7 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 10px;
+  margin: 15px 10px;
 }
 
 .image-container1 {
@@ -289,7 +289,7 @@ body {
   position: absolute;
   width: 122px;
   height: 215px;
-  left: 219px;
+  left: 280px;
   top: 233px;
 }
 
@@ -298,15 +298,15 @@ body {
   width: 122px;
   height: 218px;
   left: 49px;
-  top: 512px;
+  top: 485px;
 }
 
 .image-container4 {
   position: absolute;
   width: 122px;
   height: 218px;
-  left: 219px;
-  top: 512px;
+  left: 280px;
+  top: 485px;
 }
 
 /* containers have different positions */
@@ -319,8 +319,8 @@ body {
   position: absolute;
   width: 109px;
   height: 33px;
-  left: 54px;
-  top: 355px;
+  left: 100px;
+  top: 430px;
 }
 
 .image-text-header-container2 {
@@ -332,8 +332,8 @@ body {
   position: absolute;
   width: 109px;
   height: 33px;
-  left: 224px;
-  top: 355px;
+  left: 349px;
+  top: 430px;
 }
 
 .image-text-header-container3 {
@@ -345,8 +345,8 @@ body {
   position: absolute;
   width: 109px;
   height: 33px;
-  left: 54px;
-  top: 637px;
+  left: 115px;
+  top: 685px;
 }
 
 .image-text-header-container4 {
@@ -358,8 +358,8 @@ body {
   position: absolute;
   width: 109px;
   height: 33px;
-  left: 224px;
-  top: 637px;
+  left: 349px;
+  top: 685px;
 }
 
 /* content inside containers have the same css due to it */
@@ -375,7 +375,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 94.19%;
   /* or 13px */
 
@@ -390,8 +390,7 @@ body {
   flex-grow: 0;
   margin: 0px 10px;
 }
-
-.image-text-subheader-container {
+.image-text-subheader-container1 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -400,8 +399,44 @@ body {
   position: absolute;
   width: 109px;
   height: 70px;
-  left: 0px;
-  top: 20px;
+  left: 8px;
+  top: 23px;
+}
+.image-text-subheader-container2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+
+  position: absolute;
+  width: 109px;
+  height: 70px;
+  left: -1px;
+  top: 23px;
+}
+.image-text-subheader-container3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+
+  position: absolute;
+  width: 109px;
+  height: 70px;
+  left: -1px;
+  top: 23px;
+}
+.image-text-subheader-container4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+
+  position: absolute;
+  width: 109px;
+  height: 70px;
+  left: 4px;
+  top: 23px;
 }
 
 .image-text-subheader {
@@ -501,7 +536,7 @@ body {
   padding: 10px 10px 10px 40px;
 
   position: absolute;
-  width: 217px;
+  width: 330px;
   height: 60px;
   left: 103px;
   top: 730px;
@@ -526,7 +561,7 @@ body {
 
 .inside-subheader-2 {
   position: static;
-  width: 153px;
+  width: 250px;
   height: 40px;
   left: 54px;
   top: 10px;
@@ -543,12 +578,12 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 10px;
+  margin: 13px 10px;
 }
 
 .contact-text {
   position: static;
-  width: 89px;
+  width: 200px;
   height: 13px;
 
   font-weight: 600;
@@ -580,7 +615,7 @@ body {
   position: absolute;
   width: 140px;
   height: 38px;
-  left: 300px;
+  left: 450px;
   top: 801px;
 }
 
@@ -596,7 +631,7 @@ body {
   position: absolute;
   width: 140px;
   height: 38px;
-  left: 300px;
+  left: 450px;
   top: 850px;
 }
 
@@ -607,7 +642,7 @@ body {
   padding: 10px;
 
   position: absolute;
-  width: 109px;
+  width: 500px;
   height: 33px;
   left: 26px;
   top: 3px;
@@ -622,8 +657,24 @@ body {
   position: absolute;
   width: 109px;
   height: 33px;
-  left: -80px;
+  left: -95px;
   top: 3px;
+}
+.contact-text-container-4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+
+  position: absolute;
+  width: 109px;
+  height: 33px;
+  left: -132px;
+  top: 3px;
+}
+.profile{
+  width: 200px;
+  
 }
 
 .footer-container {
