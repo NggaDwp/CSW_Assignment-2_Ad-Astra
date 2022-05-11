@@ -11,120 +11,104 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="container-all">
-    <!-- nav here -->
-    <!-- !!!this whole thing needs to be redone, horrible formatting -->
-    <nav>
-      <div class="nav-div">
-        <img class="icon" src="./resources/navigatio_logo.png" alt="" />
-        <div class="header-dropdown">
-          <div class="header-dropdown-btn"><img src="./resources/Menu.png" alt=""></div>
-          <div class="header-dropdown-content">
-            <a href="index.html" class="nav-a" id="homeNavButton">Home</a>
-            <a href="about.html" class="nav-a" id="aboutNavButton">About</a>
-            <a href="roomlist.html" class="nav-a" id="roomlistNavButton">Room List</a>
+      <!-- nav here -->
+      <nav>
+        <div class="nav-div">
+          <img class="icon" src="./resources/navigatio_logo.png" alt="" />
+          <div class="header-dropdown">
+            <div class="header-dropdown-btn">
+              <img id="dropdownContentIcon" src="./resources/Menu.png" alt="" />
+            </div>
+            <div id="dropdownContent" class="header-dropdown-content">
+              <a href="index.html" class="nav-a" id="homeNavButton">Home</a>
+              <a href="about.html" class="nav-a" id="aboutNavButton">About</a>
+              <a href="roomlist.html" class="nav-a" id="roomlistNavButton"
+                >Room List</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      <!-- content here -->
+      <main>
+        <!-- header here  -->
+        <header class="content-head-container">
+          <h1 class="content-head">Our Team</h1>
+        </header>
+        <!-- about team subheader -->
+        <div class="subheader-container">
+          Meet the talented team behind all this
+        </div>
+        <!-- about team content  -->
+        <div class="about-team-container">
+          <div class="profile-container">
+            <img src="./resources/profil1.jpg" alt="" class="profile" />
+            <div class="image-text-header">Angga</div>
+            <div class="image-text-subheader">Developer</div>
+          </div>
+          <div class="profile-container">
+            <img src="./resources/profil2.jpg" alt="" class="profile" />
+            <div class="image-text-header">Milo</div>
+            <div class="image-text-subheader">Developer</div>
+          </div>
+          <div class="profile-container">
+            <img src="./resources/profil3.jpg" alt="" class="profile" />
+            <div class="image-text-header">Aldy</div>
+            <div class="image-text-subheader">Developer</div>
+          </div>
+          <div class="profile-container">
+            <img src="./resources/profil4.jpg" alt="" class="profile" />
+            <div class="image-text-header">Yuda</div>
+            <div class="image-text-subheader">Developer</div>
+          </div>
+        </div>
+
+        <!-- contact header  -->
+        <header class="content-head-container">
+          <h1 class="content-head">Contact</h1>
+        </header>
+        <!-- contact subheader  -->
+        <div class="subheader-container">Contact us for more information</div>
+        <!-- contact content  -->
+        <div class="contact-content-container">
+          <!-- address segment  -->
+          <div id="contact-address-container">
+            <img src="./resources/Map-location.png" alt="" />
+            <div class="contact-text">Jln. Suka-Suka No.112</div>
+          </div>
+
+          <!-- instagram segment  -->
+          <div id="contact-instagram-container">
+            <img src="./resources/Instagram.png" alt="" />
+            <div class="contact-text">navigatio</div>
+          </div>
+
+          <!-- email segment  -->
+          <div id="contact-email-container">
+            <img src="./resources/Envelope.png" alt="" />
+            <div class="contact-text">hello@navigatio.com</div>
+          </div>
+
+          <!-- phone segment  -->
+          <div id="contact-phone-container">
+            <img src="./resources/Phone.png" alt="" />
+            <div class="contact-text">08674892937</div>
+          </div>
+        </div>
+      </main>
     </div>
 
-    <!-- header here  -->
-    <header class="content-bgwh-head-container">
-      <h1 class="content-bgwh-head">
-        Our Team
-    </h1>
-    </header>
-
-    <!-- content here -->
-    <main>
-        <div class="about-subheader-container">
-            <span class="rectangle1"></span>
-            <span class="inside-subheader"> Meet The Talented Team Behind All This </span>
-        </div>
-
-        <div class="image-container1">
-            <div ><img src="./resources/profil1.jpg" alt="" class="profile"></div>
-        </div>
-        <div class="image-text-header-container1">
-            <div class="image-text-header">Angga</div>
-            <div class="image-text-subheader-container1">
-                <div class="image-text-subheader">Founder</div>
-            </div>
-        </div>
-
-        <div class="image-container2">
-            <div ><img src="./resources/profil2.jpg" alt="" class="profile"></div>
-        </div>
-        <div class="image-text-header-container2">
-            <div class="image-text-header">Milo</div>
-            <div class="image-text-subheader-container2">
-                <div class="image-text-subheader">Founder</div>
-            </div>
-        </div>
-
-        <div class="image-container3">
-            <div ><img src="./resources/profil3.jpg" alt="" class="profile"></div>
-        </div>
-        <div class="image-text-header-container3">
-            <div class="image-text-header">Aldy</div>
-            <div class="image-text-subheader-container3">
-                <div class="image-text-subheader">Founder</div>
-            </div>
-        </div>
-        
-        <div class="image-container4">
-            <div ><img src="./resources/profil4.jpg" alt="" class="profile"></div>
-        </div>
-        <div class="image-text-header-container4">
-            <div class="image-text-header">Yuda</div>
-            <div class="image-text-subheader-container4">
-                <div class="image-text-subheader">Founder</div>
-            </div>
-        </div>
-
-        <header class="content-bgwh-head-container-2">
-            <h1 class="content-bgwh-head-2">
-              Contact
-          </h1>
-          </header>
-        <div class="contact-subheader-container">
-            <span class="rectangle2"></span>
-            <span class="inside-subheader-2">Contact us for more information </span>
-        </div>
-
-        <div class="contact-image-container-1">
-            <img src="./resources/icon1.jpg" alt="">
-            <div class="contact-text-container-1">
-                <div class="contact-text">Jalan Suka Suka No 112</div></div>
-        </div>
-        <div class="contact-image-container-2">
-            <img src="./resources/icon2.jpg" alt="">
-            <div class="contact-text-container-2">
-                <div class="contact-text">navigatio</div></div>
-        </div>
-        <div class="contact-image-container-3">
-            <img src="./resources/icon3.jpg" alt="">
-            <div class="contact-text-container-1">
-                <div class="contact-text">navigatio@gmail.com</div></div>
-        </div>
-        <div class="contact-image-container-4">
-            <img src="./resources/icon4.jpg" alt="">
-            <div class="contact-text-container-4">
-                <div class="contact-text">08674892937</div></div>
-        </div>
-
-        <!-- footer here -->
-        <footer class="footer-container">
-            <div class="footer-content">Ad Astra Corporation &copy;2020</div>
-          </footer>
-    </main>
+    <!-- footer here -->
+    <footer class="footer-container">
+      <div class="footer-content">Ad Astra Corporation &copy;2020</div>
+    </footer>
     <script src="./index.js"></script>
-</body>
-
+  </body>
 </html>
