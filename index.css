@@ -1,0 +1,442 @@
+/* html {
+  overflow-x: hidden;
+} */
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  /* consistent sizing for all elements */
+  * {
+    box-sizing: border-box;
+  }
+  
+  .container-all {
+    padding: 0px 32px;
+  }
+  
+  .icon {
+    margin-top: 8px;
+    width: 184px;
+    /* border: 1px solid red; */
+  }
+  
+  .nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0.5em 0.5em 0;
+  }
+  
+  .nav-a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.97em;
+    padding: 3px;
+    font-weight: 800;
+    display: block;
+    border: 2px solid black;
+  
+    /* background has 2 values, transition switch between them on hover */
+    background: 
+      linear-gradient(to right,rgba(200, 200, 200, 1),rgba(200, 200, 200, 1)),
+      linear-gradient(to right, rgb(222, 140, 17), rgb(235, 230, 230));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms ease-in-out, transform 400ms ease-in-out;
+  }
+  
+  .nav-a:hover {
+    transform: scale(1.02);
+    background-size: 0 3px, 100% 3px;
+  }
+  
+  .activePage {
+    color: #eb9e46;
+    font-weight: 800;
+  }
+  .header-text {
+    margin-top: 32px;
+    font-size: 2.5em;
+    font-weight: 900;
+    /* border: 1px solid red; */
+    letter-spacing: -0.05em;
+    line-height: 47px;
+    max-width: 450px;
+  }
+  
+  .header-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .header-dropdown-btn {
+    background-color: #f1f1f1;
+    border: none;
+    color: black;
+    padding: 8px 24px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    top: 16px;
+  }
+  
+  .header-dropdown-content {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 88px;
+    line-height: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* .header-dropdown:hover .header-dropdown-content {
+    display: block;
+  } */
+  
+  .show{
+    opacity: 1;
+    height: auto;
+  }
+  
+  .content-subheader {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    max-width: 450px;
+  }
+  
+  /* main 'get started' button  */
+  .content-button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content-button {
+    font-size: calc(1.2em + 0.5vw);
+    background-color: #FF914D;
+    color: #f1f1f1;
+    font-weight: 700;
+    padding: 0.7em 5.3em;
+    margin-bottom: 64px;
+    border: 4px solid #FF914D;
+    box-shadow: #0000004f 8px 8px 32px 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .content-button:active {
+    background-color: #ffffff7b;
+    color: rgba(31, 23, 23, 0.37);
+  }
+  
+  .content-button:hover {
+    background-color: #FF914D;
+    color: rgb(255, 255, 255);
+    border:4px solid rgb(243, 147, 79);
+    transform: scale(1.05);
+  }
+  
+  /* featured section */
+  .content-featured-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    /* border: 1px solid red; */
+  }
+  
+  .content-featured-head {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: black;
+    color: white;
+    padding: 0.5em;
+    /* border: 1px solid red; */
+  }
+  
+  .content-featured-subhead {
+    max-width: 360px;
+    margin-left: 10px;
+    font-weight: 700;
+    border-left: 3px solid black;
+    padding-left: 0.5em;
+    /* border: 1px solid red; */
+  }
+  
+  .featured-name {
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .featured-name:hover {
+    font-style: bold;
+    font-weight: 800;
+    text-decoration: underline;
+  }
+  
+  .content-featured {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    margin-bottom: 8px;
+    margin-top: 16px;
+  }
+  
+  /* slideshow */
+  
+  .slideshow-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    overflow-x: visible;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+  .slideshow-container a{
+    text-decoration: none;
+  }
+  
+  .hotel-images {
+    display: inline-block;
+    width: 80%;
+    height: 24vh;
+    object-fit: cover;
+    transition: transform 0.5s ease, margin-left 0.5s ease, margin-right 0.5s ease;
+    cursor: pointer;
+    border-radius: 0.5em;
+  
+  }
+  
+  
+  .hotel-images:hover {
+    transform: scale(1.03);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .content-featured-villa {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+  }
+  .content-featured-location {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+  }
+  
+  /* reviews section  */
+  .content-reviews-head-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+  
+  .content-reviews-head {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: black;
+    color: white;
+    padding: 0.5em;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  
+  .content-reviews-subhead{
+    max-width: 320px;
+    margin-left: 10px;
+    font-weight: 700;
+    border-left: 3px solid black;
+    padding-left: 0.5em;
+    margin-bottom: 10px;
+  }
+  
+  .content-reviews-body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .content-reviews-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1em;
+    border: 1px solid #000000;
+    border-radius: 0.8em;
+    margin-top: 1.2em;
+    min-width: 80%;
+  }
+  
+  .content-reviews-body div {
+    margin-left: 1em;
+  }
+  
+  #review-icon-1 img, #review-icon-2 img, #review-icon-3 img, #review-icon-4 img, #review-icon-5 img {
+    border-radius: 0.7em;
+    margin-right: 0.5em;
+  }
+  
+  .footer-container-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    margin-top: 100px;
+  
+    background: #000000;
+  }
+  
+  .footer-content {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0px;
+    /* position: relative;
+    bottom: 0px;
+    left: 4vw; */
+    padding: 10px;
+    width: 100vw;
+  }
+  
+  
+  /* ////////////////////////////////////////////////  */
+  /* Desktop media queries  */
+  @media (min-width: 900px) {
+  
+    .icon {
+      position: relative;
+      margin-top: 25px;
+      top: 0.4em;
+    }
+  
+    .nav-div{
+      display: inline;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .nav-a{
+      border: none;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5em;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+  
+    .nav-a:hover{
+      transform: scale(1.2);
+    }
+     
+    .header-dropdown{
+      position: relative;
+      bottom: 40px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .header-dropdown-btn{
+      display: none;
+    }
+  
+    .header-dropdown-content{
+      display: inline-block;
+      height: auto;
+      overflow: visible;
+      opacity: 1;
+    }
+  
+    .header-text {
+      font-size: 3.5em;
+      font-weight: 900;
+      margin-bottom: 10px;
+      max-width: 600px;
+    }
+  
+    .content-subheader {
+      font-size: 1.5em;
+      font-weight: 400;
+      max-width: 600px;
+    }
+  
+    .content-button{
+      margin-top: 1.5em;
+    }
+  
+    .content-featured-head{
+      font-size: 1.8em;
+      margin-top: 1.2em;
+    }
+  
+    .content-featured-subhead{
+      font-size: 1.2em;
+      max-width: 450px;
+    }
+  
+    .content-featured{
+      font-size: 1.4em;
+      font-weight: 600;
+    }
+  
+    .hotel-images {
+      width: 80%;
+      height: 45vh;
+      transition: transform 0.5s ease, margin-left 0.5s ease, margin-right 0.5s ease;
+      cursor: pointer;
+      border-radius: 0.5em;  
+    }
+    
+    
+    .hotel-images:hover {
+      transform: scale(1.03);
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    
+  
+    main {
+      padding: 0 80px;
+    }
+  
+    .content-reviews-head{
+      font-size: 1.8em;
+      margin-top: 1.2em;
+    }
+  
+    .content-reviews-subhead{
+      font-size: 1.2em;
+      max-width: 450px;
+    }
+  
+    .content-reviews-body-container {
+      align-items: center;
+    }
+  
+  }
+  
