@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NAVIGATIO</title>
     <link rel="shortcut icon" href="./resources/navigatio_favicon.png" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./index.css" />
     <!-- Google's Roboto font links-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container-all">
@@ -22,8 +19,8 @@
       <div class="nav-div">
         <img class="icon" src="./resources/navigatio_logo.png" alt="" />
         <div class="header-dropdown">
-          <div class="header-dropdown-btn"><img src="./resources/Menu.png" alt=""></div>
-          <div class="header-dropdown-content">
+          <div class="header-dropdown-btn"><img id="dropdownContentIcon" src="./resources/Menu.png" alt=""></div>
+          <div id="dropdownContent" class="header-dropdown-content">
             <a href="index.html" class="nav-a" id="homeNavButton">Home</a>
             <a href="about.html" class="nav-a" id="aboutNavButton">About</a>
             <a href="roomlist.html" class="nav-a" id="roomlistNavButton">Room List</a>
@@ -32,64 +29,77 @@
       </div>
     </nav>
 
-    <!-- header here  -->
-    <header>
-      <h1 class="header-text">
-        Searching for accommodations have never been easier.
-      </h1>
-    </header>
 
     <!-- content here -->
-    <main>
+  <main>
+        <!-- header here  -->
+        <header>
+          <h1 class="header-text">
+            Searching for accommodations have never been easier.
+          </h1>
+        </header>
+    
       <div class="content-subheader">
         It's time to revolutionize the way you search for accommodations.
       </div>
       <div class="content-button-container">
         <button onclick="buttonStartHere()" class="content-button">
-          Start Here
+          GET STARTED
         </button>
       </div>
       <div class="content-featured-container">
         <div class="content-featured-head">Accommodations spotlight</div>
-        <div class="content-featured-subhead">Featured hotel</div>
-        <div>pictures</div>
-        <div>pictures</div>
-        <div>pictures</div>
-        <div>pictures</div>
-        <div>pictures</div>
-        <div>pictures</div>
-        <br />
-        <div class="content-featured-subhead">Featured villa</div>
-        <div>pictures</div>
-        <div>pictures</div>
-        <div>pictures</div>
-        <div>pictures</div>
-        <div>pictures</div>
-        <div>pictures</div>
-        <div>pictures</div>
+        <div class="content-featured-subhead">
+          <div>heres our curated selection of accommodations, just for you.</div>
+        </div>
+
+        <div class="content-featured"> · &NonBreakingSpace; <a href="https://nihi.com/" class="featured-name">'Nihi Sumba'</a> - Featured Hotel</div>
+        <div class="slideshow-container">
+            <a href="https://nihi.com/" aria-label="Nihi Sumba Hotel"> <img loading="lazy" class="hotel-images" src="./resources/hotel2.jpg" alt=""> </a>
+            <a href="https://nihi.com/" aria-label="Nihi Sumba Hotel"> <img loading="lazy" class="hotel-images" src="./resources/hotel1.jpg" alt=""> </a>
+            <a href="https://nihi.com/" aria-label="Nihi Sumba Hotel"> <img loading="lazy" class="hotel-images" src="./resources/hotel3.jpg" alt=""> </a>
+        </div> 
+
+        <div class="content-featured"> · &NonBreakingSpace; <a href="https://www.instagram.com/7seascottages/?hl=en" class="featured-name">'7Seas Cottages'</a> - Featured Villa</div>
+        <div class="slideshow-container">
+          <a href="https://www.instagram.com/7seascottages/?hl=en" aria-label="7Seas Cottages Gili Air"> <img loading="lazy" class="hotel-images" src="./resources/villa2.jpg" alt=""> </a>
+          <a href="https://www.instagram.com/7seascottages/?hl=en" aria-label="7Seas Cottages Gili Air"> <img loading="lazy" class="hotel-images" src="./resources/villa1.jpg" alt=""> </a>
+          <a href="https://www.instagram.com/7seascottages/?hl=en" aria-label="7Seas Cottages Gili Air"> <img loading="lazy" class="hotel-images" src="./resources/villa3.jpg" alt=""> </a>
+      </div> 
+
+        <div class="content-featured"> · &NonBreakingSpace; <a href="https://bali.com/" class="featured-name">'Bali, Indonesia'</a> - Featured Location</div>
+        <div class="slideshow-container">
+          <a href="https://bali.com/" aria-label="Bali, Indonesia"> <img loading="lazy" class="hotel-images" src="./resources/location1.jpg" alt=""> </a>
+          <a href="https://bali.com/" aria-label="Bali, Indonesia"> <img loading="lazy" class="hotel-images" src="./resources/location2.jpg" alt=""> </a>
+          <a href="https://bali.com/" aria-label="Bali, Indonesia"> <img loading="lazy" class="hotel-images" src="./resources/location3.jpg" alt=""> </a>
+      </div> 
+
       </div>
       <div class="content-reviews-head-container">
         <div class="content-reviews-head">Customer Reviews</div>
+        <div class="content-reviews-subhead">
+          <div>have a look at what some customers have to say about us</div>
+        </div>
         <div class="content-reviews-body-container">
-          <div>
-            <div>profile-icon</div>
-            <div>I love navigatio!</div>
+          <div class="content-reviews-body">
+            <div id="review-icon-1"></div>
+            <div>"I love navigatio!"</div>
           </div>
-          <div>
-            <div>profile-icon</div>
-            <div>Honestly the best service ive used</div>
+          <div class="content-reviews-body">
+            <div id="review-icon-2"></div>
+            <div>"Honestly the best service ive used"</div>
           </div>
-          <div>
-            <div>profile-icon</div>
-            <div>This is great!</div>
+          <div class="content-reviews-body">
+            <div id="review-icon-3"></div>
+            <div>"This is great!"</div>
           </div>
-          <div>
-            <div>profile-icon</div>
-            <div>well done website</div>
+          <div class="content-reviews-body">
+            <div id="review-icon-4"></div>
+            <div>"well done website"</div>
           </div>
-          <div>
-            <div>profile-icon</div>
-            <div>review-text</div>
+          <div class="content-reviews-body">
+            <div id="review-icon-5"></div>
+            <div>"good, i like veri much!!"</div>
           </div>
         </div>
       </div>
