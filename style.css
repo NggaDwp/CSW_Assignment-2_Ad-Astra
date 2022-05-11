@@ -23,6 +23,9 @@ body {
   padding: 0px 20px;
 }
 
+
+
+/* commons */
 .icon {
   width: 10em;
   /* border: 1px solid red; */
@@ -61,6 +64,7 @@ body {
   font-size: 1.05em;
   background-size: 0 3px, 100% 3px;
 }
+
 
 .activePage {
   color: #eb9e46;
@@ -108,6 +112,8 @@ body {
 .header-dropdown:hover .header-dropdown-btn {
   background-color: rgb(131, 131, 131);
 }
+
+/* /commons  */
 
 .content-subheader {
   font-size: 1.2em;
