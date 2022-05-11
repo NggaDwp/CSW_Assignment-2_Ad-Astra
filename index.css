@@ -156,14 +156,14 @@ body {
   .content-featured-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
     /* border: 1px solid red; */
   }
   
   .content-featured-head {
     font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     background: black;
     color: white;
     padding: 0.5em;
@@ -172,10 +172,10 @@ body {
   
   .content-featured-subhead {
     max-width: 360px;
-    margin-left: 10px;
+    margin-left: 8px;
     font-weight: 700;
     border-left: 3px solid black;
-    padding-left: 0.5em;
+    padding-left: 0.4em;
     /* border: 1px solid red; */
   }
   
@@ -252,7 +252,7 @@ body {
   .content-reviews-head {
     font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     background: black;
     color: white;
     padding: 0.5em;
@@ -262,11 +262,11 @@ body {
   
   .content-reviews-subhead{
     max-width: 320px;
-    margin-left: 10px;
+    margin-left: 16px;
     font-weight: 700;
     border-left: 3px solid black;
     padding-left: 0.5em;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
   
   .content-reviews-body-container {
