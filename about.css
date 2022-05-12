@@ -2,9 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-body {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
@@ -109,29 +106,27 @@ body {
 
 /** content header CSS starts here  */
 .content-head-container {
-  margin-top: 32px;
-  padding: 8px;
-  min-width: 100%;
-  color: #f1f1f1;
-  background: #040404;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
 }
 
 .content-head {
   font-size: 1.5em;
-  line-height: 94.19%;
-  letter-spacing: -0.025em;
-  color: #ffffff;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 0px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  background: black;
+  color: white;
+  padding: 0.5em;
+  /* border: 1px solid red; */
 }
 
 /** subheader CSS here  */
 .subheader-container {
   margin-top: 8px;
   margin-bottom: 32px;
-  font-size: 1.2em;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: bold;
   letter-spacing: -0.025em;
   color: #000000;
   border-left: 4px solid #000000;
@@ -168,6 +163,11 @@ body {
   letter-spacing: -0.025em;
 }
 
+.image-text-nim{
+  font-style: italic;
+  font-size: 3.5vw;
+}
+
 .image-text-subheader {
   margin-top: 4px;
   font-weight: 400;
@@ -180,6 +180,9 @@ body {
 @media (min-width: 450px) {
   .image-text-header {
     font-size: 2em;
+  }
+  .image-text-nim{
+    font-size: 1em;
   }
   .image-text-subheader{
     font-size: 1.2em;
