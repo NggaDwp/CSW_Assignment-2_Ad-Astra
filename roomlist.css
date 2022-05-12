@@ -790,6 +790,8 @@ section {
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 40px;
+  filter: blur(4px);
+
 }
 
 .poster-wrapper {
@@ -797,9 +799,6 @@ section {
   width: 100%;
 }
 
-.poster-wrapper img {
-  filter: blur(4px);
-}
 
 /** header css here  */
 .header-container {
@@ -930,7 +929,18 @@ section {
   padding: 0.5em;
 }
 
+.order-button-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 .order-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: 200px;
   height: 70px;
   margin: 20px;
