@@ -185,7 +185,6 @@ body {
   }
   
   .featured-name:hover {
-    font-style: bold;
     font-weight: 800;
     text-decoration: underline;
   }
