@@ -699,7 +699,7 @@ body {
 .vip-room-wrapper {
   overflow: auto;
   display: grid;
-  grid-template-columns: repeat(auto, 100%);
+  grid-template-columns: repeat(1, 100%);
   scroll-snap-type: x mandatory;
 }
 
