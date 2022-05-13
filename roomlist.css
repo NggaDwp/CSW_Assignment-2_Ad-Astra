@@ -1026,7 +1026,8 @@ ul {
 
 #quote3 {
   position: absolute;
-  right: 5%;
+  max-width: 25vw;
+  left: 25%;
   top: 40%;
   color: white;
   font-size: 3vw;
