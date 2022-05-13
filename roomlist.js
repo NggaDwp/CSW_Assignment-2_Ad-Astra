@@ -56,27 +56,39 @@ function getElementID(element) {
   //this if check is for the image shown on the page
   var initialSelect = "initialSelect";
   if (element == initialSelect) {
-    //checks if the element passed in is the initialSelect
-    document.getElementById("Hidden-vip-room1").style.display = "block";
-    document.addEventListener("mouseup", function (e) {
-      var container = document.getElementById("Hidden-vip-room1");
-      if (!container.contains(e.target)) {
-        container.style.display = "none";
-      }
-    });
+    initialSelection(); //in proper cases, this only runs once, on page load
   } else { //else, the element passed in becomes shown, whatever the element is //?this function could be reworked buut i am tired
     var elementID = element.id;
+    document.getElementById(elementID).classList.add("gradient-and-star-active");
     var elID =
       "Hidden-" +
       elementID.slice(0, 8) +
       elementID.substr(elementID.length - 1);
-    console.log(elID);
-    document.getElementById(elID).style.display = "block";
+    var selectedElement = document.getElementById(elID);
+    selectedElement.style.display = "block";
+    //
     document.addEventListener("mouseup", function (e) {
       var container = document.getElementById(elID);
       if (!container.contains(e.target)) {
         container.style.display = "none";
+        document.getElementById(elementID).classList.remove("gradient-and-star-active");
       }
     });
   }
+}
+
+function initialSelection(){
+  //checks if the element passed in is the initialSelect
+  var selectedElement = document.getElementById("Hidden-vip-room1");
+  var selectedSlide = document.getElementById("vip-room-desc-1");
+  selectedElement.style.display = "block";
+  selectedSlide.classList.add("gradient-and-star-active");
+  //
+  document.addEventListener("mouseup", function (e) {
+    var container = document.getElementById("Hidden-vip-room1");
+    if (!container.contains(e.target)) {
+      container.style.display = "none";
+      selectedSlide.classList.remove("gradient-and-star-active");
+    }
+  });
 }
